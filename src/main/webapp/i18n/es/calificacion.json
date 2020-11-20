@@ -1,0 +1,24 @@
+{
+  "storeApp": {
+    "calificacion": {
+      "home": {
+        "title": "Calificacions",
+        "createLabel": "Crear nuevo Calificacion",
+        "createOrEditLabel": "Crear o editar Calificacion",
+        "notFound": "Ningún Calificacions encontrado"
+      },
+      "created": "Un nuevo Calificacion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Calificacion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Calificacion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Calificacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Calificacion"
+      },
+      "date": "Date",
+      "evaluacion": "Evaluacion",
+      "product": "Product"
+    }
+  }
+}

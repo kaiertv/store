@@ -24,6 +24,15 @@ entity ProductCategory {
     description String
 }
 
+entity Calificacion {
+	date Instant required
+    evaluacion Evaluar required
+}
+enum Evaluar
+ {
+  X, XX, XXX, XXXX, XXXXX
+}
+
 entity Customer {
     firstName String required
     lastName String required
@@ -71,7 +80,8 @@ relationship ManyToOne {
 relationship OneToMany {
     Customer{order} to ProductOrder{customer(email) required},
     ProductOrder{orderItem} to OrderItem{order(code) required},
-    ProductCategory{product} to Product{productCategory(name)}
+    ProductCategory{product} to Product{productCategory(name)},
+    Product{Calificacion} to Calificacion{product(name)}
 }
 
 /* Entities for Invoice microservice */
